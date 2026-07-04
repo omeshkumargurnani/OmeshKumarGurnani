@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Omesh Kumar Gurnani</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f8f4ea;
+color:#222;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+/* NAVBAR */
+
+header{
+background:#16263d;
+padding:18px 0;
+position:fixed;
+width:100%;
+top:0;
+z-index:999;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+color:#fff;
+font-size:22px;
+font-weight:600;
+}
+
+.logo span{
+color:#c89b2b;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:35px;
+}
+
+nav ul li a{
+color:#fff;
+text-decoration:none;
+font-size:15px;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#c89b2b;
+}
+
+.contact-btn{
+background:#c89b2b;
+padding:10px 24px;
+border-radius:30px;
+text-decoration:none;
+color:#fff;
+}
+
+/* HERO */
+
+.hero{
+background:#16263d;
+height:100vh;
+display:flex;
+align-items:center;
+text-align:center;
+color:white;
+padding-top:80px;
+}
+
+.hero-content{
+max-width:800px;
+margin:auto;
+}
+
+.circle{
+width:90px;
+height:90px;
+background:#c89b2b;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:36px;
+margin:auto;
+margin-bottom:30px;
+}
+
+.hero h1{
+font-family:'Playfair Display',serif;
+font-size:58px;
+margin-bottom:20px;
+}
+
+.hero p{
+opacity:.8;
+margin-bottom:30px;
+line-height:1.8;
+}
+
+.btns{
+display:flex;
+justify-content:center;
+gap:20px;
+}
+
+.btn{
+padding:14px 35px;
+border-radius:30px;
+text-decoration:none;
+}
+
+.gold{
+background:#c89b2b;
+color:white;
+}
+
+.outline{
+border:1px solid white;
+color:white;
+}
+
+/* ABOUT */
+
+section{
+padding:90px 0;
+}
+
+.title{
+text-align:center;
+font-family:'Playfair Display';
+font-size:40px;
+margin-bottom:20px;
+}
+
+.about p{
+max-width:850px;
+margin:auto;
+text-align:justify ;
+line-height:1.9;
+color:#555;
+}
+
+/* Cards */
+
+.dark{
+background:#16263d;
+color:white;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+margin-top:60px;
+}
+
+.card{
+background:#1f314c;
+padding:35px;
+text-align:center;
+border-radius:15px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card i{
+font-size:35px;
+color:#c89b2b;
+margin-bottom:20px;
+}
+
+.card h3{
+margin-bottom:15px;
+}
+
+/* Impact */
+
+.impact{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+margin-top:60px;
+}
+
+.box{
+background:white;
+padding:35px;
+text-align:center;
+border-radius:15px;
+}
+
+.box i{
+font-size:35px;
+color:#c89b2b;
+margin-bottom:20px;
+}
+
+/* Testimonials */
+
+.testimonials{
+background:#f2ead8;
+}
+
+.review-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+margin-top:50px;
+}
+
+.review{
+background:white;
+padding:30px;
+border-radius:12px;
+}
+
+.stars{
+color:#c89b2b;
+margin-bottom:20px;
+}
+
+/* Blog */
+
+.blog-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+margin-top:50px;
+}
+
+.blog{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.blog-top{
+background:#16263d;
+height:170px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.blog-top i{
+font-size:45px;
+color:#c89b2b;
+}
+
+.blog-content{
+padding:25px;
+}
+
+.blog-content a{
+color:#c89b2b;
+text-decoration:none;
+}
+
+/* CTA */
+
+.cta{
+background:#16263d;
+color:white;
+text-align:center;
+}
+
+.cta h2{
+font-family:'Playfair Display';
+font-size:42px;
+margin-bottom:20px;
+}
+
+.cta p{
+margin-bottom:30px;
+}
+
+/* Footer */
+
+footer{
+background:#111d30;
+color:#ccc;
+padding:70px 0;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:2fr 1fr 1fr 1fr;
+gap:40px;
+}
+
+footer ul{
+list-style:none;
+}
+
+footer li{
+margin:10px 0;
+}
+
+footer a{
+color:#ccc;
+text-decoration:none;
+}
+
+.social{
+margin-top:20px;
+}
+
+.social i{
+margin-right:12px;
+color:#c89b2b;
+font-size:18px;
+}
+
+/* Mobile */
+
+@media(max-width:992px){
+
+.cards,
+.impact,
+.review-grid,
+.blog-grid,
+.footer-grid{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<nav>
+
+<div class="logo"><span>O</span> Omesh Kumar Gurnani</div>
+
+<ul>
+
+<li><a href="https://omeshkumargurnani.com/">Home</a></li>
+<li><a href="https://omeshkumargurnaniblog.wordpress.com/about/">About</a></li>
+<li><a href="https://neoterradevelopment.blogspot.com/2026/06/why-omesh-kumar-gurnani-represents-new.html">Blog</a></li>
+
+</ul>
+
+<a href="https://www.nairaland.com/omeshkumargurna/posts" class="contact-btn">Contact</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="circle">O</div>
+
+<h1>Omesh Kumar Gurnani</h1>
+
+<p>
+Entrepreneur | Social Impact Advocate | Community Builder
+<br><br>
+Creating meaningful change through leadership,
+innovation and community empowerment.
+</p>
+
+<div class="btns">
+
+<a href="https://differ.blog/p/what-defines-a-modern-real-estate-leader-insights-through-the-work-of-4b3245" class="btn gold">About Us</a>
+
+<a href="https://www.crunchbase.com/person/omesh-kumar-gurnani" class="btn outline">Get In Touch</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="about">
+
+<div class="container">
+
+<h2 class="title">About Omesh Kumar Gurnani</h2>
+
+<p>
+
+Omesh Kumar Gurnani is a visionary real estate entrepreneur, business leader, and philanthropist dedicated to creating lasting value through innovation and responsible development. With a strong focus on strategic growth, community impact, and leadership excellence, Omesh Kumar Gurnani continues to inspire progress across the real estate sector while supporting meaningful social initiatives and sustainable business practices.
+</p>
+<p>With experience across multiple industries, Omesh Kumar Gurnani has developed a reputation for approaching business with a forward-thinking perspective. His professional philosophy emphasizes innovation, collaboration, and the importance of staying responsive to changing market trends. By combining strategic vision with practical execution, he has worked on ventures designed to meet evolving consumer and business needs.
+</p>
+<p>A key aspect of <a href="https://differ.blog/@omesh-kumar-gurnani">Omesh Kumar Gurnani</a> approach is his focus on sustainable growth. Rather than pursuing short-term success alone, he advocates building businesses that are resilient, customer-focused, and positioned for long-term development. His interest in digital transformation and modern business strategies reflects an understanding of how technology continues to shape industries and create new opportunities for entrepreneurs.
+</p>
+<p>Beyond his business interests, Omesh Kumar Gurnani is also presented in public profiles as someone who values giving back to society. His stated philanthropic interests include supporting initiatives related to education, healthcare, and community development. These efforts reflect a belief that successful businesses can contribute positively to society while creating lasting economic value.
+</p>
+
+<p>Leadership is another defining element of <a href="https://www.skillmill.com/showroom/omesh-kumar-gurnani-web-and-software-development-meet-omesh-kumar-gurnani-entrepreneur-innovator-real-estate-visionary-1782847650280">Omesh Kumar Gurnani</a> professional profile. He believes effective leadership involves encouraging collaboration, promoting innovation, and maintaining high ethical standards. His emphasis on teamwork, accountability, and continuous improvement demonstrates a commitment to building organizations that can adapt to changing business environments while delivering consistent results.
+</p>
+<p>Throughout his career, Omesh Kumar Gurnani has expressed an interest in developing ventures that combine commercial success with meaningful impact. His entrepreneurial outlook is centered on identifying opportunities, embracing innovation, and fostering relationships that support sustainable growth. This balanced approach has shaped his business philosophy and continues to influence his professional direction.
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- BLOG -->
+
+<section>
+
+<div class="container">
+
+<h2 class="title">Latest Insights</h2>
+
+<div class="blog-grid">
+
+
+
+</div>
+
+<div class="blog">
+
+<div class="blog-top">
+<i class="fa-solid fa-building"></i>
+</div>
+
+<div class="blog-content">
+
+<h3>Building Communities</h3>
+
+<p>How collaboration creates sustainable growth.</p>
+
+<br>
+
+<a href="https://omeshkumargurnani.netlify.app/">Read More →</a>
+
+</div>
+
+</div>
+
+<div class="blog">
+
+<div class="blog-top">
+<i class="fa-regular fa-heart"></i>
+</div>
+
+<div class="blog-content">
+
+<h3>Giving Back</h3>
+
+<p>Creating measurable social impact together.</p>
+
+<br>
+
+<a href="https://www.omeshgurnani.org/">Read More →</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>Let's Create Impact Together</h2>
+
+<p>Join us in building stronger communities.</p>
+
+<a href="https://www.skillmill.com/profile/omesh-kumar-gurnani" class="btn gold">Get In Touch</a>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+
+<h3>Omesh Kumar Gurnani</h3>
+
+<p>
+Building a legacy of positive impact through community initiatives.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>
